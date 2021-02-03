@@ -1,0 +1,401 @@
+{
+	"info": {
+		"_postman_id": "01901c9f-64e9-405a-b4f8-8024fd77e4ca",
+		"name": "Kokonut",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "LOGIN",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"reyvolsam43@hotmail.com\",\n    \"password\": \"password\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "REGISTRAR",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Roberto Palazuelos\",\n    \"email\": \"reyvolsam43@hotmail.com\",\n    \"password\": \"password\",\n    \"password_confirmation\": \"password\",\n    \"rol_id\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/registrar",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"registrar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AUTENTICACION FACEBOOK",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Samuel Regino\",\n    \"email\": \"samuel43_7@hotmail.com\",\n    \"password\": \"password\",\n    \"password_confirmation\": \"password\",\n    \"rol\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/auth/facebook",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"auth",
+						"facebook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LOGOUT",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer yJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOGQ2MWYwZDc0NTNjZjVhNDI0OTNmNzlmMjVkZjE4Y2JkODcxOGY4ZGRhZDA5MmE5NDY2MDUwZGRiZjg2MWFlNjYzMGM3NTllMTgxODMyMmUiLCJpYXQiOjE2MTIyNzYzMzAsIm5iZiI6MTYxMjI3NjMzMCwiZXhwIjoxNjQzODEyMzMwLCJzdWIiOiI1Iiwic2NvcGVzIjpbXX0.D83sM-yq6MLgnrl1jXv6quND285Lvb9SyyNnM6xwfJPkWlvr5Cwlhf_RrQKQWYG2qQd6snsQHM1SQVDbSGVOx3X4oSnLyiAmEfSOJakGI_CzE6PGZj2Xu4wOMpTrJrLva7apzKq0KeJENkfXMwdLQ7rgU3dCxuHfNpq6X0Oixpzb-J8YhwbJatKtcPPzHSQ8clJzfM6HmkzBoXmttHYvyXVzILarF3T6KAXgxmc5e0UYl-2NrYuLmakH1hZv9JMfoQpCh_BuPg5mj6iZJhiMqi3mULQSbiTe4tr-XHjZKw1eZRDawfl0A_xUGjE5zmLnvR9xbG68x0Hk3Ro08eJdmk3IB53QkKQoHRMx0tJix0jB1lfZaZt_zLJoGAgVsoidb-NNqJyy_Jkz0s1130oMoKJ57yYlywcFGP58ClsN7xt2P9GrZjbarOGHzkG3RmBUJLz4ElTs-4qi1FkEkkdJaVZJ7xdDVwpo6xdV2ee8t_ocA9HFjeYoKeIg3hL8RuYY7ACxHzK6zwQg6zoTZxvXojbqcsSJwhGgg5y0c73nB-n20FRTcdwD4338ZCMsQ0WEzMeHTcab8JFTEZrCycorp2CYhn8f4k0JECrYzxxTQqOgyYHOwSZsvDUbTR4eYykjs-ykFp2cQsxaMrVpp-22-sG6UQwUJvy74T7TXXpfHcM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/logout",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MODIFICAR",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMWYxZmVkZDgyM2Y3YTdmMDNiNjljM2I3NGY1NjA2MmRkNjcxM2JhYzVlNzlmY2I0MTA4YTIwY2E0MTk0NjBmZTIxNTBmMDBiYjg4YzMzNDEiLCJpYXQiOjE2MTIyNzc1NjgsIm5iZiI6MTYxMjI3NzU2OCwiZXhwIjoxNjQzODEzNTY4LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.pPqRnhX1gUsBqeCooMY5ZU2oTyivVzB0HAnyyXMqs3QcVehC3HuTchiOdD7xTQ9mJxK8uKxAHh_DZ5xlVFSUZvQ8S8B3HQCFZWx9MQ4GofdjqxNVW8qvmjfX44HUnhbPEP7_P4vbYVkbPk2KIO-H94Z14NYyfTAr-APt3H894UHYlTwEmeh4_qNX-ikP1DqQGx4KZ3obPEhEQ1w9Gaq1nrJGIutEd10h8C81YrGnpUlI-ef852_b9NcBWyP1awDOtHTiqZZM0MAnVMgR0mjaJC3kRyMbjVjNjNnOFGdue94_XlaCqMu7JMGmO8jeiRunfr81HK6esybfUuUtS022sNk7LrTZAATRDXyCWIGEjC7QL9l-tkm913IrvoQ6dIGj8hozxk-0l3nm6CIt_p_Tk1x1y6zDq2CeFt40oXKHpljcPL126MFojD-ENNbVcXkts5Klr2y9AcSQHql6Pmy_4IXxA4XSiNtjS6yRffnJeurIOyq0xqs1vfzXsBKqBYjkjVbvBZUk5nqh07ohHrmsMS7iioVHH1CpdE2LrsAratXv7u6xqw5SknC-GcM_Czg0IB7FNeu6s1N5Gt6FRs5bYwxRQqj9-aJmXPG1WsVnjhBvIjL3r5OK7iXcrUeXIv8fJ269kyiYFwRPmdAax241CY-ysi15TPHJmM30SRc8img",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Roberto Palazuelos 2\",\n    \"rol_id\": 2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/modificar",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"modificar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "VER INFORMACION",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMWYxZmVkZDgyM2Y3YTdmMDNiNjljM2I3NGY1NjA2MmRkNjcxM2JhYzVlNzlmY2I0MTA4YTIwY2E0MTk0NjBmZTIxNTBmMDBiYjg4YzMzNDEiLCJpYXQiOjE2MTIyNzc1NjgsIm5iZiI6MTYxMjI3NzU2OCwiZXhwIjoxNjQzODEzNTY4LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.pPqRnhX1gUsBqeCooMY5ZU2oTyivVzB0HAnyyXMqs3QcVehC3HuTchiOdD7xTQ9mJxK8uKxAHh_DZ5xlVFSUZvQ8S8B3HQCFZWx9MQ4GofdjqxNVW8qvmjfX44HUnhbPEP7_P4vbYVkbPk2KIO-H94Z14NYyfTAr-APt3H894UHYlTwEmeh4_qNX-ikP1DqQGx4KZ3obPEhEQ1w9Gaq1nrJGIutEd10h8C81YrGnpUlI-ef852_b9NcBWyP1awDOtHTiqZZM0MAnVMgR0mjaJC3kRyMbjVjNjNnOFGdue94_XlaCqMu7JMGmO8jeiRunfr81HK6esybfUuUtS022sNk7LrTZAATRDXyCWIGEjC7QL9l-tkm913IrvoQ6dIGj8hozxk-0l3nm6CIt_p_Tk1x1y6zDq2CeFt40oXKHpljcPL126MFojD-ENNbVcXkts5Klr2y9AcSQHql6Pmy_4IXxA4XSiNtjS6yRffnJeurIOyq0xqs1vfzXsBKqBYjkjVbvBZUk5nqh07ohHrmsMS7iioVHH1CpdE2LrsAratXv7u6xqw5SknC-GcM_Czg0IB7FNeu6s1N5Gt6FRs5bYwxRQqj9-aJmXPG1WsVnjhBvIjL3r5OK7iXcrUeXIv8fJ269kyiYFwRPmdAax241CY-ysi15TPHJmM30SRc8img",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/verInformacion",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"verInformacion"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CARGAR FOTOS",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiODNhZmQyMjg0ZjRlMjllMGFkZWMwZjgxNjJmNjliMzkxZGUxYzRmMmZhMDdjMmNhYzA0OGUyNzdkMjZiNmU5MDE0NzI3MWI0N2JmNjc3ODMiLCJpYXQiOjE2MTIzNTgwMTgsIm5iZiI6MTYxMjM1ODAxOCwiZXhwIjoxNjQzODk0MDE4LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.K8xiuep9NC1TwupXmw7dApqNhMtNuw7aqQ33foIXQXSMJuroeoCWzo5A1c2uIMLsOjgttDaVB-ssllKS44UpJ9PU9Mp-6KrihEEP1jhbMgRHDrsCKZzS_EyCXldpbZZbhpnLtmAHZgDPy-FuX5VTmIZY-brqTft_h7V_aiKy60gc1hOkMtHxF1mJXHkivIrdbCesVu908KK5gaC1IquguqAQXE7lK9ByDEq-ueJ7JIGdo3vwEGeWJulqEkinRBgYlELFGzrtx4YIzpYCUudaQnBsZ_tt7Qv_ORwhyy7YdOpk0TXLpLHBvCMGKncsbM5Ua0Rn5mzh-7mawQz1MaIZx54LcC4B92Mdi7AGHrfraxgXr7zU-IRnTRqhlK1Dd69IMyUazYEView8GIiT4GBdctTI5BfgsLpREIEocQm4nvGq58dIkrO7KoTiEoYxhwsn44fhtSrAbbTP_MqdOkM18qVbsB-bwCoKw3DCH16R6sxMCPEOmeoHxA4a8MyBOIU1v0ETJf9M11O7rapiU-zOtN0K2YSDvcKl0xTM3-EHkEce2fxmGqe3w-nFA_7TogmXUWj0EguRiKedyvow5dTBJOc1_XS9EMG0HluSjFliogDB44JhESHzumVJJSZoHdzHFr2PAs8PmTaGq5nucwqGdgx1fSz9N0XxqzaHCxH6PII",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/samuelreginoplacido/Desktop/IMG_20210202_113634.jpg"
+						},
+						{
+							"key": "lat",
+							"value": "18.1666214",
+							"type": "text"
+						},
+						{
+							"key": "lon",
+							"value": "-94.1346442",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/photo",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"photo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BUSCAR FOTOS",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiODNhZmQyMjg0ZjRlMjllMGFkZWMwZjgxNjJmNjliMzkxZGUxYzRmMmZhMDdjMmNhYzA0OGUyNzdkMjZiNmU5MDE0NzI3MWI0N2JmNjc3ODMiLCJpYXQiOjE2MTIzNTgwMTgsIm5iZiI6MTYxMjM1ODAxOCwiZXhwIjoxNjQzODk0MDE4LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.K8xiuep9NC1TwupXmw7dApqNhMtNuw7aqQ33foIXQXSMJuroeoCWzo5A1c2uIMLsOjgttDaVB-ssllKS44UpJ9PU9Mp-6KrihEEP1jhbMgRHDrsCKZzS_EyCXldpbZZbhpnLtmAHZgDPy-FuX5VTmIZY-brqTft_h7V_aiKy60gc1hOkMtHxF1mJXHkivIrdbCesVu908KK5gaC1IquguqAQXE7lK9ByDEq-ueJ7JIGdo3vwEGeWJulqEkinRBgYlELFGzrtx4YIzpYCUudaQnBsZ_tt7Qv_ORwhyy7YdOpk0TXLpLHBvCMGKncsbM5Ua0Rn5mzh-7mawQz1MaIZx54LcC4B92Mdi7AGHrfraxgXr7zU-IRnTRqhlK1Dd69IMyUazYEView8GIiT4GBdctTI5BfgsLpREIEocQm4nvGq58dIkrO7KoTiEoYxhwsn44fhtSrAbbTP_MqdOkM18qVbsB-bwCoKw3DCH16R6sxMCPEOmeoHxA4a8MyBOIU1v0ETJf9M11O7rapiU-zOtN0K2YSDvcKl0xTM3-EHkEce2fxmGqe3w-nFA_7TogmXUWj0EguRiKedyvow5dTBJOc1_XS9EMG0HluSjFliogDB44JhESHzumVJJSZoHdzHFr2PAs8PmTaGq5nucwqGdgx1fSz9N0XxqzaHCxH6PII",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"lat\": 18.1700262,\n    \"lon\": -94.1337859\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/photo/search",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"photo",
+						"search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ELIMINAR FOTO",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMWYxZmVkZDgyM2Y3YTdmMDNiNjljM2I3NGY1NjA2MmRkNjcxM2JhYzVlNzlmY2I0MTA4YTIwY2E0MTk0NjBmZTIxNTBmMDBiYjg4YzMzNDEiLCJpYXQiOjE2MTIyNzc1NjgsIm5iZiI6MTYxMjI3NzU2OCwiZXhwIjoxNjQzODEzNTY4LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.pPqRnhX1gUsBqeCooMY5ZU2oTyivVzB0HAnyyXMqs3QcVehC3HuTchiOdD7xTQ9mJxK8uKxAHh_DZ5xlVFSUZvQ8S8B3HQCFZWx9MQ4GofdjqxNVW8qvmjfX44HUnhbPEP7_P4vbYVkbPk2KIO-H94Z14NYyfTAr-APt3H894UHYlTwEmeh4_qNX-ikP1DqQGx4KZ3obPEhEQ1w9Gaq1nrJGIutEd10h8C81YrGnpUlI-ef852_b9NcBWyP1awDOtHTiqZZM0MAnVMgR0mjaJC3kRyMbjVjNjNnOFGdue94_XlaCqMu7JMGmO8jeiRunfr81HK6esybfUuUtS022sNk7LrTZAATRDXyCWIGEjC7QL9l-tkm913IrvoQ6dIGj8hozxk-0l3nm6CIt_p_Tk1x1y6zDq2CeFt40oXKHpljcPL126MFojD-ENNbVcXkts5Klr2y9AcSQHql6Pmy_4IXxA4XSiNtjS6yRffnJeurIOyq0xqs1vfzXsBKqBYjkjVbvBZUk5nqh07ohHrmsMS7iioVHH1CpdE2LrsAratXv7u6xqw5SknC-GcM_Czg0IB7FNeu6s1N5Gt6FRs5bYwxRQqj9-aJmXPG1WsVnjhBvIjL3r5OK7iXcrUeXIv8fJ269kyiYFwRPmdAax241CY-ysi15TPHJmM30SRc8img",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/samuelreginoplacido/Desktop/IMG_20210202_113634.jpg"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/photo/11",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"photo",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LISTAR FOTOS",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiY2QzOGQ0MzVlODU3ZDkxODRhMTg5NGRhN2M1Mjg3M2M1ODU2MGVjYzY2Mjk2MzA0ZjIwNTZkZTdjNDcyYzU4NjYxNWUzN2JiMjE4N2Y0NjkiLCJpYXQiOjE2MTIzNTYzNTAsIm5iZiI6MTYxMjM1NjM1MCwiZXhwIjoxNjQzODkyMzUwLCJzdWIiOiI0Iiwic2NvcGVzIjpbXX0.oDM1yJF7OJzMjug4xQsLVsVgmmYx1w4ZRXuInLLh-Ost-gU0zlJQ6b2nBo6sA2M4tlMyNUR6xF50jPPVmvubCu2RNSEDzrCldkGml4UNfaX69zj3OjjYxGYknUhL9_03Nb6BuWOWs45JuB9hisySrme9ZMhw_Hzu-E1dUxezSE41aovO3YQMQ4WXpUuYPSk0X_1xiKguIZLsq1XAbU4xjjEmU3pJSYtOBA5I_0Db8j3OnGRUYlQTI855-nUy4H3gINOID2GKEEKOh4JrtlwKqu8rCMCGm3DNU-gudo1n-0IGUtdpnsLUmit-mwu_hnmD_MReITjsEwaRp_bBhWPK-azVOQj6BFU12aZ1G7Uz64h6KtFMUCKgsLhhBisXhKFmrDR1JctBxKHtyL8AVLmXfxs3LKO90z0LEIHMiqiNLUU1gJ5E_iOhjW4-ToJeuoXTNTFzghRt8TEEwYdC7c-3uVUUhjqegK7xdnH8AtrOugAQmpJj6yJNqr-KaLw14JKofI02p8cHTurkkaMbznL16FVjavHMvoRBHowlbqJ2zuce74mXrlxZvU6diiYjEDdXJSoiAhNzrRe3Z4N7yphPJrdEDewIh3B6-LhzFhcrRQjmNVMUz5cu-rgRnxVYmg-9Z-RxkWDfUdFovkdbwZW-ggyOyJIIT8sUj9-nzQCALXc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/photo",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"photo"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
